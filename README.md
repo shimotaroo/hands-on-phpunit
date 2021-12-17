@@ -1,4 +1,4 @@
-# PHPUnitでのテストコード入門用 環境構築
+# PHPUnitでのテストコード実装入門ハンズオン用 環境構築
 
 ## 環境・バージョン
 
@@ -59,6 +59,12 @@ docker-compose exec app composer install
 
 ```sh
 docker-compose exec app php artisan key:generate
+```
+
+### マイグレーションとシーダーの実行
+
+```sh
+docker-compose exec app php artisan migrate --seed
 ```
 
 ### Laravelへのアクセス
