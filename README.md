@@ -71,4 +71,4 @@ docker-compose exec app php artisan migrate --seed
 
 http://localhost:80 にアクセスして以下の画面が表示されたらOK
 
-![ハンズオントップ画面](https://user-images.githubusercontent.com/58982088/146733064-17154270-0210-40a7-b548-4e0c67442d46.png)
+![ハンズオントップ画面](https://user-images.githubusercontent.com/58982088/146734840-f10978dd-446e-4809-8bce-2872e15d0f83.png)
