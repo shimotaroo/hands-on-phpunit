@@ -25,7 +25,12 @@ class MemoController extends Controller
      */
     public function index(): View
     {
-        $memos = $this->fetchService->fetch();
+        try {
+            $memos = $this->fetchService->fetch();
+        } catch (Exception $e) {
+            echo "エラー：" . $e->getMessage();
+        }
+
         return view('index', [
             'memos' => $memos
         ]);
