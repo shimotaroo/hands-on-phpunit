@@ -15,11 +15,6 @@ class CreateMemosTable extends Migration
     {
         Schema::create('memos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')
-                ->constrained()
-                ->onUpdate('cascade')
-                ->onDelete('cascade')
-                ->comment('ユーザーID');
             $table->string('title', 50)->comment('タイトル');
             $table->string('body', 255)->comment('メモの内容');
             $table->timestamps();
