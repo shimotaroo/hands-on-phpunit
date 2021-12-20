@@ -69,4 +69,6 @@ docker-compose exec app php artisan migrate --seed
 
 ### Laravelへのアクセス
 
-http://localhost:80 にアクセスする
+http://localhost:80 にアクセスして以下の画面が表示されたらOK
+
+![ハンズオントップ画面](https://user-images.githubusercontent.com/58982088/146733064-17154270-0210-40a7-b548-4e0c67442d46.png)
