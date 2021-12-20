@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MemoController::class, 'index']);
+Route::post('/memo', [MemoController::class, 'store'])->name('store');

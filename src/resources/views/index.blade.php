@@ -32,8 +32,17 @@
         </div>
         <div>
             <h3 class="mb-3 text-center">メモの登録</h3>
+            @if ($errors->any())
+                <div class="col-6 col-6 mx-auto card-text text-left alert alert-danger">
+                    <ul class="mb-0">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="row justify-content-center">
-                <form class="col-6" action="" method="POST">
+                <form class="col-6" action="{{ route('store') }}" method="POST">
                     @csrf
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">タイトル</label>
