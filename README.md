@@ -1,4 +1,4 @@
-# PHPUnitでのテストコード実装入門ハンズオン用 環境構築
+# PHPUnitでのテストコード実装超入門ハンズオン用 環境構築
 
 ## 環境・バージョン
 
@@ -72,3 +72,5 @@ docker-compose exec app php artisan migrate --seed
 http://localhost:80 にアクセスして以下の画面が表示されたらOK
 
 ![ハンズオントップ画面](https://user-images.githubusercontent.com/58982088/146734840-f10978dd-446e-4809-8bce-2872e15d0f83.png)
+
+※実際のコードでは「入門」ではなく「超入門」に変更しています。

@@ -9,7 +9,7 @@
 <body>
     <div class='container'>
         <div class='text-center my-5' id="app">
-            <h2>PHPUnitでのテストコード実装入門ハンズオン</h2>
+            <h2>PHPUnitでのテストコード実装超入門ハンズオン</h2>
         </div>
         <div class="row justify-content-center text-center">
             <h3 class="mb-3">メモ一覧</h3>
