@@ -43,15 +43,32 @@ Creating hands-on-phpunit_app_1 ... done
 Creating hands-on-phpunit_web_1 ... done
 ```
 
+念のため以下のコマンドでコンテナの起動状態を確認。
+
+```sh
+docker-compose ps
+```
+
+全てのコンテナのSTATUSが`running`になっていたらOK。
+
+```sh
+NAME                     SERVICE             STATUS              PORTS
+hands-on-phpunit_app_1   app                 running             9000/tcp
+hands-on-phpunit_db_1    db                  running             0.0.0.0:3306->3306/tcp, 33060/tcp
+hands-on-phpunit_web_1   web                 running             0.0.0.0:80->80/tcp
+```
+
 ## Laravel設定
 
 [既存のLaravelプロジェクトをgit cloneしてローカルで開発準備をする時の手順（Docker、Docker Compose使用）](https://zenn.dev/shimotaroo/articles/4ee537dbed319e)にまとめているが、以下にも記載↓
 
 ### .envの作成
 
-`.env.example`をコピーして`.env`という名前で作成
+`src`ディレクトリの中の`.env.example`をコピーして`.env`という名前で作成
 
 ### composerパッケージのインストール
+
+以降のコマンドはルートディレクトリで実行する
 
 ```sh
 docker-compose exec app composer install
